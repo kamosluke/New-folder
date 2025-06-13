@@ -1,0 +1,193 @@
+body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-area {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify_content: center;
+        }
+        .login-area h3 {
+            width: 0px;
+            height: 100px;
+            display: flex;
+            align-items: start;
+            justify-content: left;
+        }
+        .login-area h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .login-area p {
+            margin-bottom: 30px;
+            color: #666;
+        }
+        .social-button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #f5f6f8;
+            color: rgb(14, 20, 20);
+            border: none;
+            border-radius: 3px;
+            cursor: auto;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .input-group input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        .checkbox-group {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+      }
+      .checkbox-group input {
+          margin-right: 5px;
+      }
+        .login-button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+        .create-account {
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+        }
+        .create-account a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .create-account a:hover {
+            text-decoration: underline;
+        }
+        .graphic-area {
+            flex: 1;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            position: relative;
+        }
+        .graphic-area .graphic-content {
+            text-align: center;
+        }
+        .graphic-area h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .graphic-area p {
+            font-size: 12px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .graphic-area .circles {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .graphic-area .circles div {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            position: absolute;
+            animation: pulse 3s infinite ease-in-out;
+        }
+        .graphic-area .circles div:nth-child(2) {
+            animation-delay: 1s;
+        }
+         .graphic-area .circles div:nth-child(3) {
+            animation-delay: 2s;
+        }
+         .graphic-area .circles div:nth-child(4) {
+            animation-delay: 3s;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+             50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+        }
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .social-button {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 14px;
+            margin: 0 5px;
+        }
+        .social-button img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        .social-button:hover {
+            background-color: #f0f0f0;
+        }
